@@ -6,7 +6,8 @@ on:
   release:
     types:
       - published  # Runs on every new release
-
+  workflow_dispatch:  # Enables manual trigger from GitHub Actions UI
+  
 jobs:
   run_script:
     runs-on: ubuntu-latest
