@@ -3,9 +3,6 @@ name: Daily TradingView Update
 on:
   schedule:
     - cron: "5 20 * * 1-5"  # Runs at 4:05 PM ET (20:05 UTC) on weekdays
-  release:
-    types:
-      - published  # Runs on every new release
   workflow_dispatch:  # Enables manual trigger from GitHub Actions UI
   
 jobs:
