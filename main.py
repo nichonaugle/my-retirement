@@ -61,6 +61,7 @@ def send_discord_notification():
             f"📊 **Position:** {position_state}\n"
         )
 
+    print(message)
     requests.post(DISCORD_WEBHOOK_URL, json={"content": message})
 
 # Run the function
