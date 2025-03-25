@@ -3,13 +3,18 @@ name: Daily TradingView Update
 on:
   schedule:
     - cron: "5 20 * * 1-5"  # Runs at 4:05 PM ET (20:05 UTC) on weekdays
+  release:
+    types:
+      - published  # Runs on every new release
 
 jobs:
   run_script:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout Latest Release
         uses: actions/checkout@v3
+        with:
+          ref: refs/tags/${{ github.event.release.tag_name }}  # Pull latest release
 
       - name: Set Up Python
         uses: actions/setup-python@v4
@@ -21,5 +26,5 @@ jobs:
 
       - name: Run TradingView Scraper
         env:
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}  # Inject secret
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: python main.py
