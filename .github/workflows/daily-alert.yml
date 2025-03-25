@@ -1,0 +1,25 @@
+name: Daily TradingView Update
+
+on:
+  schedule:
+    - cron: "5 20 * * 1-5"  # Runs at 4:05 PM ET (20:05 UTC) on weekdays
+
+jobs:
+  run_script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set Up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run TradingView Scraper
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}  # Inject secret
+        run: python main.py
