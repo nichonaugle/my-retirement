@@ -4,7 +4,7 @@ My retirement portfolio bot based on a triple leveraged ETF with simple moving a
 
 Use this link to sign up, as we both get a referral bonus and it helps me out! [link]
 
-Join the discord [Link]
+Join the discord [(https://discord.gg/xdRxUFJ44F)]
 
 Research (This part is AI written because I dont want to rewrite a research paper):
 
