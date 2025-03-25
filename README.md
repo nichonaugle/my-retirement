@@ -1,4 +1,6 @@
-# my-retirement
+# My Retirement Strategy: Triple Leveraged!
+
+Disclaimer: This is not financial advice, I am not a financial advisor. This repo is just a demonstration of my plan and what I am doing; something I hope you find helpful in your investment journey.
 
 My retirement portfolio bot based on a triple leveraged ETF with simple moving average for hedging. It is based on a research paper where the backtested results persist through the Great Depression. This was initially tested on the SPY but when applied to the QQQ amplified gains (and losses) can be felt. This strategy is executed in a non-retirement tax-advantaged account, so capital gains will be paid; however, the gains are worth it for smaller portfolios. The account also is based in a 5% APY cash account, which can be achieved in Robinhood (not recommended) or Webull and helps in periods where one is in a cash position. 
 
