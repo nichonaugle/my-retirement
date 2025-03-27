@@ -21,7 +21,29 @@ _Disclaimer: This is not financial advice, I am not a financial advisor. This re
 
 My retirement portfolio bot based on a triple leveraged ETF with simple moving average for hedging. It is based on a research paper where the backtested results persist through the Great Depression. This was initially tested on the SPY but when applied to the QQQ amplified gains (and losses) can be felt. This strategy is executed in a non-retirement tax-advantaged account, so capital gains will probably need to be paid for most positions; however, the gains are worth it for smaller portfolios. The account also is based in a 5% APY cash account, which can be achieved in Robinhood (not recommended) or Webull and helps in periods where one is in a cash position. 
 
-Use this link to sign up, as we both get a referral bonus and it helps me out! [link]
+<p>
+  Ready to supercharge your trading and support this project? 🚀
+</p>
+
+<p align="center">
+  <a href="https://a.webull.com/3DbTWANtSKxdqloNpa" style="
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Add shadow */
+    font-weight: bold; /* Make text bold */
+  ">
+    Sign up using my Webull referral link! It's a win-win: you unlock a great APY on cash (which is part of this strategy), and we both score a sweet stock bonus. Your support fuels further development and research as well. Let's grow together! 💰
+  </a>
+</p>
 
 ## Research
 
