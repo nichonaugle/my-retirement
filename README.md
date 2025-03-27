@@ -1,41 +1,48 @@
+<p align="center">
+   <a href="https://github.com/nichonaugle/triple-leveraged-retirement">
+     <img src="https://img.shields.io/github/stars/nichonaugle/triple-leveraged-retirement?style=for-the-badge&logo=github&logoColor=white&color=yellow" alt="GitHub Stars">
+   </a>
+   <a href="https://github.com/nichonaugle/triple-leveraged-retirement/graphs/contributors">
+     <img src="https://img.shields.io/github/contributors/nichonaugle/triple-leveraged-retirement?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Contributors">
+   </a>
+  <a href="https://discord.gg/xdRxUFJ44F">
+    <img src="https://img.shields.io/badge/Discord-Join%20Us-blueviolet?style=for-the-badge&logo=discord&logoColor=white" alt="Join Discord">
+  </a>
+   <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2741701">
+    <img src="https://img.shields.io/badge/Read%20the%20Paper-View%20Now-informational?style=for-the-badge&logo=openaccess&logoColor=white" alt="View Research Paper">
+  </a>
+</p>
+
 <br>
 
-<div align = center>
+_Disclaimer: This is not financial advice, I am not a financial advisor. This repo is just a demonstration of my plan and what I am doing; something I hope you find helpful in your investment journey._
 
-[![Badge License]][License]   
-[![Badge Likes]][#]
+# Heavy Leverage ETF Based Retirement Strategy
 
-<br>
-<br>
-
-# My Retirement Strategy: Triple Leveraged!
-
-Disclaimer: This is not financial advice, I am not a financial advisor. This repo is just a demonstration of my plan and what I am doing; something I hope you find helpful in your investment journey.
-
-My retirement portfolio bot based on a triple leveraged ETF with simple moving average for hedging. It is based on a research paper where the backtested results persist through the Great Depression. This was initially tested on the SPY but when applied to the QQQ amplified gains (and losses) can be felt. This strategy is executed in a non-retirement tax-advantaged account, so capital gains will be paid; however, the gains are worth it for smaller portfolios. The account also is based in a 5% APY cash account, which can be achieved in Robinhood (not recommended) or Webull and helps in periods where one is in a cash position. 
+My retirement portfolio bot based on a triple leveraged ETF with simple moving average for hedging. It is based on a research paper where the backtested results persist through the Great Depression. This was initially tested on the SPY but when applied to the QQQ amplified gains (and losses) can be felt. This strategy is executed in a non-retirement tax-advantaged account, so capital gains will probably need to be paid for most positions; however, the gains are worth it for smaller portfolios. The account also is based in a 5% APY cash account, which can be achieved in Robinhood (not recommended) or Webull and helps in periods where one is in a cash position. 
 
 Use this link to sign up, as we both get a referral bonus and it helps me out! [link]
 
-Join the discord [(https://discord.gg/xdRxUFJ44F)]
+## Research
 
-Research (This part is AI written because I dont want to rewrite a research paper):
+_(This part is AI written because I dont want to rewrite a research paper, just go read it)_
 
-The research paper used for this strategy is: "Leveraged ETFs: Long-Term Performance and Risk Management" by Roni Israelov and Bryan Kelly. (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2741701). This paper delves into the intricacies of leveraged ETFs and presents a robust strategy for managing their inherent risks. Here's a deep dive into the key findings and methodology:
+The research paper used for this strategy is: "Leveraged ETFs: Long-Term Performance and Risk Management" by Roni Israelov and Bryan Kelly [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2741701). This paper delves into the intricacies of leveraged ETFs and presents a robust strategy for managing their inherent risks. Here's a deep dive into the key findings and methodology:
 
-**1. Leveraged ETFs and Their Characteristics:**
+**1. Leveraged ETFs and Their Characteristics**
 
 * Leveraged ETFs aim to deliver a multiple (e.g., 2x, 3x) of the daily returns of an underlying index. This amplification also applies to losses, making them highly volatile.
 * The paper highlights that due to the daily resetting mechanism, long-term returns of leveraged ETFs can deviate significantly from the leveraged multiple of the underlying index's long-term returns. This is due to the effects of compounding, especially in volatile markets. This is called Beta slippage.
 * The research emphasizes the importance of understanding the compounding effects and the potential for "volatility drag," which can erode returns in choppy markets.
 
-**2. Risk Management with Simple Moving Averages (SMA):**
+**2. Risk Management with Simple Moving Averages (SMA)**
 
 * The core of the strategy is the use of a simple moving average (SMA) as a market-timing tool.
 * The SMA acts as a trend-following indicator. When the price of the underlying index (e.g., SPY, QQQ) is above its SMA, the strategy invests in the leveraged ETF. When the price falls below the SMA, the strategy moves to a risk-free asset (e.g., cash).
 * The paper explores various SMA lookback periods to optimize the strategy's performance.
 * The SMA is used to reduce the drawdowns that leveraged ETF’s experience.
 
-**3. Backtesting Methodology and Results:**
+**3. Backtesting Methodology and Results**
 
 * The authors conducted extensive backtests using historical data, including periods of significant market stress, such as the Great Depression.
 * The backtests aimed to assess the strategy's performance across different market conditions and evaluate its ability to generate positive risk-adjusted returns.
@@ -48,21 +55,21 @@ The research paper used for this strategy is: "Leveraged ETFs: Long-Term Perform
 * The paper shows that the SMA method greatly reduces the Max Drawdown of the leveraged etf.
 * The paper also shows that the Sharpe ratio is improved.
 
-**4. Key Findings and Implications:**
+**4. Key Findings and Implications**
 
 * The research demonstrates that a well-timed strategy using leveraged ETFs and SMAs can generate superior risk-adjusted returns compared to a buy-and-hold approach.
 * The SMA acts as an effective risk management tool, mitigating the impact of market downturns and reducing drawdowns.
 * The strategy's robustness is evidenced by its ability to withstand significant market shocks, as shown by the backtests during the Great Depression.
 * The paper also shows that the strategy works on many different underlaying assets.
 
-**5. Application to QQQ and Amplified Volatility:**
+**5. Application to QQQ and Amplified Volatility**
 
 * While the paper primarily focuses on broad market indices, the strategy can be applied to other indices, such as the QQQ, which tracks the Nasdaq-100.
 * Due to the QQQ's higher volatility, applying the strategy to this index can amplify both gains and losses.
 * This increased volatility necessitates a careful consideration of risk tolerance and position sizing.
 
-**Important Notes:**
-
+**Important Notes**
+* I understand that a black swan day could wipe this strategy out but that assumes two things: the event happens above the sma (which historically is not likely) and you stay in the position through the event (which is irresponsible). As a result I have a stop loss implemented to prevent this from happening, but this could use some refining in the strategy.
 * Leveraged ETFs are inherently risky, and this strategy is not financial advice.
 * Past performance is not indicative of future results.
 * It is crucial to thoroughly read and understand the linked research paper before implementing this strategy.
