@@ -1,3 +1,13 @@
+<br>
+
+<div align = center>
+
+[![Badge License]][License]   
+[![Badge Likes]][#]
+
+<br>
+<br>
+
 # My Retirement Strategy: Triple Leveraged!
 
 Disclaimer: This is not financial advice, I am not a financial advisor. This repo is just a demonstration of my plan and what I am doing; something I hope you find helpful in your investment journey.
